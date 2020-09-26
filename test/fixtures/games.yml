@@ -1,0 +1,17 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  calendar_id: 1
+  game_type: MyString
+  court_type: MyString
+  player: MyString
+  score: MyString
+  memo: MyText
+
+two:
+  calendar_id: 1
+  game_type: MyString
+  court_type: MyString
+  player: MyString
+  score: MyString
+  memo: MyText

@@ -1,0 +1,11 @@
+<%= form_for @game, url: { action: 'create' } do |f| %>
+ <div class="form-group">
+    <%= f.label :game_type, 'シングルスorダブルス' %>
+    <%= f.select :game_type, {'シングルス': 1 ,'ダブルス': 2 }, {include_blank: '選択してください'}, {class: 'form-control'} %>
+ </div>
+ <div class="form-group">
+    <%= f.label :court_type, 'サーフェス' %>
+    <%= f.select :court_type, {'クレイ': 1 ,'ハード': 2, 'オムニ': 3 }, {include_blank: '選択してください'}, {class: 'form-control'} %>
+ </div>
+ <%= f.submit '作成', class: 'btn btn-default' %>
+<% end %>

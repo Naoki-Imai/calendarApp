@@ -10,13 +10,25 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2020_09_25_014646) do
+ActiveRecord::Schema.define(version: 2020_09_26_043945) do
 
   create_table "events", force: :cascade do |t|
     t.string "title"
     t.text "description"
     t.datetime "start_date"
     t.datetime "end_date"
+    t.string "type"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  create_table "games", force: :cascade do |t|
+    t.integer "calendar_id"
+    t.string "game_type"
+    t.string "court_type"
+    t.string "player"
+    t.string "score"
+    t.text "memo"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
